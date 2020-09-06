@@ -1,0 +1,28 @@
+<!--Q.1.
+<div style="text-align:center">
+  <h1>
+     Child to parent communication
+  </h1>
+  
+  <app-subcomponent (MyEvent)="Message= $event"></app-subcomponent>
+
+  <h2>{{Message}}</h2>  
+</div>
+-->
+
+<div style="text-align: center;">
+  <h1>
+    Parent to Child
+    <app-subcomponent [parentData] = "Message"></app-subcomponent>
+  </h1>
+</div>
+
+
+<div style = "text-align: center;">
+  <h1>
+    Child to Parent
+   <app-subcomponent (MyEvent)="Msg= $event"></app-subcomponent>
+   <!-- Display the message received from child-->
+   <h2>{{Msg}}</h2>
+  </h1>
+</div>

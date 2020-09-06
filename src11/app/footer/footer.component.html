@@ -1,0 +1,21 @@
+
+<!--Submit Button-->
+<div class="row">
+    <div class="col-md-6 form-group">
+        
+        <button  type="button" class="btn btn-primary" (click) = "CreateAndUpdate(reportsService.currentEmployee)" >Submit</button>
+    </div>
+</div>
+
+
+<!--Display Data-->
+<div class="table table-hover">
+    <tr *ngFor = "let rpt of allReoprt">
+        <td>{{rpt.firstname}}</td>
+        <td>{{rpt.lastname}}</td>
+        <td>{{rpt.Address}}</td>
+        <td>{{rpt.Email}}</td>
+        <td>{{rpt.mytime}}</td>
+        <td>{{rpt.Explaination}}</td>
+    </tr>
+</div>

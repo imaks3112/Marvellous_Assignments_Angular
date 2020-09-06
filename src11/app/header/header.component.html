@@ -1,0 +1,29 @@
+
+<!--Header-->
+<div class="form">
+    <div class="jumbotron">
+        <h1 style="text-align: center;">Bug Report</h1>
+    </div>
+</div>
+
+<!--Personal Info-->
+<div class="row">
+    <div class="col-md-6 form-group">
+        <input placeholder="First Name*" class="form-control" [(ngModel)] = "reportsService.currentEmployee.firstname">
+    </div>
+    
+    <div class="col-md-6 form-group">
+        <input placeholder="Last Name*" class="form-control" [(ngModel)] = "reportsService.currentEmployee.lastname">
+    </div>
+
+    <div class="col-md-6 form-group">
+        <input placeholder="Address*" class="form-control" [(ngModel)] = "reportsService.currentEmployee.Address">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 form-group">
+        <input placeholder="Email*" class="form-control" [(ngModel)] = "reportsService.currentEmployee.Email">
+    </div>
+</div>
+
